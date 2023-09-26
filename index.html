@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="./index.css">
     <title>My Blog</title>
-</head>
-<body>
-    <header>
-        <nav class="header-container">
-            <h1> Welcome to my blog</h1>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Categorias">Categories</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </nav>
+  </head>
+  <body class="wrapper">
+    <header class="header-top">
+      <h1 class="header-top__headind">Welcome to My Blog</h1>
+      <nav class="header-top__nav">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <div class="main-container">
-            <div class="left-section">
-                <div class="blog-post">
-                    <h2>Post Title 1</h2>
-                    <p class="meta-info">Published on September 12, 2023 by John Doe</p>
-                    <p>This is the content of the blog post...</p>
-                    <p>More content goes here</p>
-                </div>
-                <div class="blog-post">
-                    <h2>Post Title 2</h2>
-                    <p class="meta-info">Published on September 10, 2023 by Jane Smith</p>
-                    <p>This is another blog post</p>
-                    <p>More content goes here</p>  
-                </div>
-            </div>
+    <div class="wrapper">
+      <main>
+        <article>
+          <h2>Post Title 1</h2>
+          <p class="item__publicat">
+            Published on <time datetime="2023-09-12">September 12, 2023</time> by John Doe
+          </p>
+          <p>This is the content of the blog post...</p>
+          <p>More content goes here...</p>
+        </article>
 
-            <div class="right-section">
-                <div class="widget">
-                    <h2>Recent Posts</h2>
-                    <ul class="widget-list">
-                        <li>Post title 1</li>
-                        <li>Post title 2</li>
-                        <li>Post title 3</li>
-                    </ul>
-                </div>
-                <div class="widget">
-                    <h2>Categories</h2>
-                    <ul class="widget-list">
-                        <li>Category 1</li>
-                        <li>Category 2</li>
-                        <li>Category 3</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </main>
+        <article>
+          <h2>Post Title 2</h2>
+          <p class="item__publicat">
+            Published on <time datetime="2023-09-10">September 10, 2023</time> by Jane Smith
+          </p>
+          <p>This is another blog post...</p>
+          <p>More content goes here...</p>
+        </article>
+      </main>
+
+      <aside>
+        <section>
+          <h2>Recent Posts</h2>
+          <ul class="nav__recent">
+            <li><a href="#">Post Title 1</a></li>
+            <li><a href="#">Post Title 2</a></li>
+            <li><a href="#">Post Title 3</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Categories</h2>
+          <ul class="nav__categories">
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
 
     <footer>
-        &copy; Copyright 2023 - All Rights Reserved
+      <p>&copy; 2023 My Blog. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
